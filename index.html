@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown menu (click/hover)</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Dropdown menu with click/hover switch mode</h1>
+    </header>
+
+    <section class="options">
+        <h3 class="options__title">Options:</h3>
+        <div class="options__content">
+            <form class="options__container-width">
+                <fieldset class="options__fieldset">
+                    <legend>Choose a container style:</legend>
+
+                    <input type="radio" name="width" id="fixed-width">
+                    <label for="fixed-width">fixed width</label>
+
+                    <input type="radio" name="width" id="full-width">
+                    <label for="full-width">full width</label>
+                </fieldset>
+            </form>
+            <form class="options__menu-mode">
+                <fieldset class="options__fieldset">
+                    <legend>Choose a dropdown menu mode:</legend>
+
+                    <input type="radio" name="mode" id="hover" value="hover">
+                    <label for="hover">hover</label>
+
+                    <input type="radio" name="mode" id="click" value="click">
+                    <label for="click">click</label>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item menu__item--hover">
+                <a href="#" class="menu__link">First</a>
+            </li>
+            <li class="menu__item menu__item--hover">
+                <a href="#" class="menu__link">Second</a>
+                <ul class="menu__submenu submenu">
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">first sub-item</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">second sub-item</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">third sub-item</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">fourth sub-item</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item menu__item--hover">
+                <a href="#" class="menu__link">Third</a>
+            </li>
+            <li class="menu__item menu__item--hover">
+                <a href="#" class="menu__link">Fourth</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="menu.js"></script>
+</body>
+</html>
